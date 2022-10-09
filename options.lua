@@ -5,6 +5,7 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = true, -- sets vim.opt.wrap
+    guicursor = 'a:hor20-Cursor',
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -15,19 +16,6 @@ return {
     vue_pre_processors = [["scss"]],
     vim_monokai_tasty_italic = 1,
     closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl',
-    -- vim_vue_plugin_config = {
-    --   syntax = {
-    --     template = [['html']],
-    --     script = [['javascript']],
-    --     style = [['scss']],
-    --   },
-    --   full_syntax = [[]],
-    --   initial_indent = [[]],
-    --   attribute = 0,
-    --   keyword = 0,
-    --   foldexpr = 0,
-    --   debug = 0,
-    -- },
   },
   o = {
     cursorline = true,
