@@ -6,7 +6,7 @@ return {
   { "tpope/vim-fugitive" },
   { "albanm/vuetify-vim" },
   { "rizzatti/dash.vim" },
-  -- { "alvan/vim-closetag" },
+  { "alvan/vim-closetag" },
   { "sheerun/vim-polyglot" },
   {
     "folke/todo-comments.nvim",

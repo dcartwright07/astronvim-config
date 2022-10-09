@@ -14,7 +14,7 @@ return {
     status_diagnostics_enabled = true, -- enable diagnostics in statusline
     vue_pre_processors = [["scss"]],
     vim_monokai_tasty_italic = 1,
-    -- closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl',
+    closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl',
     -- vim_vue_plugin_config = {
     --   syntax = {
     --     template = [['html']],

@@ -19,6 +19,10 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   command = "set syntax=javascript",
 })
 
+vim.cmd([[
+  autocmd VimEnter,ColorScheme * lua require("user.theme").telescope_theme()
+]])
+
 -- vim.api.nvim_create_autocmd({ "OnChangeVueSyntax" }, {
 --   command = function()
 --     vim.cmd([[

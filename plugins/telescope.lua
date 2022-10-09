@@ -1,29 +1,33 @@
 return {
   defaults = {
     prompt_prefix = "   ",
-    layout_strategy = "bottom_pane",
-    -- selection_caret = "  ",
-    entry_prefix = "  ",
+    borderchars = {
+      prompt = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+      results = { "─", "▐", "─", "│", "╭", "▐", "▐", "╰" },
+      preview = { " ", " ", " ", "▌", "▌", " ", " ", "▌" },
+    },
+    selection_caret = "❯ ",
     layout_config = {
+      width = 0.90,
+      height = 0.7,
+      preview_cutoff = 120,
       horizontal = {
-        prompt_position = "top",
-        preview_width = 0.55,
-        results_width = 0.8,
+        preview_width = function(_, cols, _)
+          return math.floor(cols * 0.6)
+        end,
       },
       vertical = {
-        mirror = false,
+        width = 0.9,
+        height = 0.95,
+        preview_height = 0.5,
       },
-      width = 0.87,
-      height = 0.70,
-      preview_cutoff = 120,
+      flex = {
+        horizontal = {
+          preview_width = 0.9,
+        },
+      },
     },
-    -- border = {},
-    -- borderchars = { " ", " ", " ", " ", " ", " ", " ", " " },
-    borderchars = {
-      prompt = { "=", " ", " ", " ", " ", " ", " ", " " },
-      results = { " ", " ", " ", " ", " ", " ", " ", " " },
-      preview = { "─", " ", " ", "│", "╭", " ", " ", " " },
-    },
+    layout_strategy = "bottom_pane",
   },
   aerial = {
     show_nesting = true,
