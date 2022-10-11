@@ -26,7 +26,7 @@ return function(config)
       vim.api.nvim_create_autocmd("BufWritePre", {
         desc = "Auto format before save",
         pattern = "<buffer>",
-        callback = vim.lsp.buf.formatting_sync,
+        callback = vim.lsp.buf.format,
       })
     end
   end
