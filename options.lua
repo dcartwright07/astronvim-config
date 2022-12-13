@@ -5,7 +5,7 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = true, -- sets vim.opt.wrap
-    guicursor = 'i:hor20-Cursor',
+    -- guicursor = 'i:hor20-Cursor',
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -24,6 +24,7 @@ return {
     expandtab = true,
     autoindent = true,
     smartindent = true,
-    column_width = 120,
+    termguicolors = true,
+    -- column_width = 120,
   },
 }

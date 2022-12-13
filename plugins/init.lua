@@ -2,7 +2,7 @@ return {
   { "junegunn/vader.vim" },
   { "patstockwell/vim-monokai-tasty" },
   { "leafOfTree/vim-vue-plugin" },
-  -- { "lepture/vim-velocity" },
+  { "lepture/vim-velocity" },
   { "tpope/vim-fugitive" },
   { "albanm/vuetify-vim" },
   { "rizzatti/dash.vim" },
@@ -17,4 +17,9 @@ return {
     'declancm/cinnamon.nvim',
     config = function() require('cinnamon').setup() end
   },
+  { 'vim-vdebug/vdebug' },
+  { 'pangloss/vim-javascript' },
+  { 'elzr/vim-json' },
+  { 'vim-scripts/Rainbow-Parenthesis' },
+  { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
 }
