@@ -7,6 +7,6 @@
 return {
   nvim_lsp = 1000,
   luasnip = 750,
-  buffer = 500,
-  path = 250,
+  buffer = 900,
+  path = 850,
 }
