@@ -1,13 +1,11 @@
 return {
   { "junegunn/vader.vim" },
   { "patstockwell/vim-monokai-tasty" },
-  { "leafOfTree/vim-vue-plugin" },
   { "lepture/vim-velocity" },
   { "tpope/vim-fugitive" },
   { "albanm/vuetify-vim" },
   { "rizzatti/dash.vim" },
   { "alvan/vim-closetag" },
-  { "sheerun/vim-polyglot" },
   {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
@@ -21,5 +19,6 @@ return {
   { 'pangloss/vim-javascript' },
   { 'elzr/vim-json' },
   { 'vim-scripts/Rainbow-Parenthesis' },
-  { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
+  { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' },
+  { 'nvim-treesitter/playground' }
 }

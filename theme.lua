@@ -7,6 +7,11 @@ M.hi_colors = function()
     fg = "#DCD7BA",
     green = "#76946A",
     red = "#E46876",
+    purple = "#AF87FF",
+    orange = "#FF9700",
+    white = "#FFFFFF",
+    light_blue = "#62D8F1",
+    magenta = "#FC1A70",
   }
   local color_binds = {
     bg = { group = "NormalFloat", property = "background" },
@@ -19,6 +24,44 @@ M.hi_colors = function()
     local ret = vim.api.nvim_get_hl_by_name(name.group, true)
     return string.format("#%06x", ret[name.property])
   end
+
+  vim.api.nvim_set_hl(0, "@variable", {
+    fg = colors.white,
+  })
+  vim.api.nvim_set_hl(0, "@variable.builtin", {
+    fg = colors.orange,
+    italic = true
+  })
+  vim.api.nvim_set_hl(0, "@keyword.function", {
+    fg = colors.light_blue,
+    italic = true
+  })
+  vim.api.nvim_set_hl(0, "@parameter", {
+    fg = colors.orange,
+    italic = true
+  })
+  vim.api.nvim_set_hl(0, "@type", {
+    fg = colors.light_blue,
+    -- fg = "#337dff",
+  })
+  vim.api.nvim_set_hl(0, "@type.builtin", {
+    italic = true,
+  })
+  vim.api.nvim_set_hl(0, "@type.qualifier", {
+    fg = colors.magenta,
+  })
+  vim.api.nvim_set_hl(0, "@tag", {
+    fg = colors.magenta,
+  })
+  vim.api.nvim_set_hl(0, "@tag.delimiter", {
+    fg = colors.white,
+  })
+  vim.api.nvim_set_hl(0, "@tag.attribute", {
+    fg = colors.purple,
+  })
+  vim.api.nvim_set_hl(0, "@label", {
+    fg = colors.magenta,
+  })
 
   for k, v in pairs(color_binds) do
     local found, color = pcall(get_hl_by_name, v)

@@ -27,7 +27,7 @@ return {
         },
       },
     },
-    layout_strategy = "bottom_pane",
+    -- layout_strategy = "bottom_pane",
   },
   aerial = {
     show_nesting = true,
