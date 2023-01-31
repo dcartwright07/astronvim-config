@@ -12,13 +12,4 @@ return {
     vim_monokai_tasty_italic = 1,
     closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl',
   },
-  o = {
-    cursorline = true,
-    tabstop = 2,
-    shiftwidth = 2,
-    expandtab = true,
-    autoindent = true,
-    smartindent = true,
-    termguicolors = true,
-  },
 }

@@ -23,5 +23,8 @@ return {
       goto_node = '<cr>',
       show_help = '?',
     },
+  },
+  indent = {
+    enable = true
   }
 }
