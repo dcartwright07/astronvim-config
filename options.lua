@@ -6,6 +6,7 @@ return {
     title = true,
     confirm = true,
     cmdheight = 1,
+    completeopt = { "menuone", "longest", "preview" }, -- Options for insert mode completion
   },
   g = {
     vue_pre_processors = [["scss"]],
