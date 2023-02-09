@@ -1,7 +1,7 @@
 return {
   { "junegunn/vader.vim" },
   { "patstockwell/vim-monokai-tasty" },
-  { "lepture/vim-velocity" },
+  -- { "lepture/vim-velocity" },
   { 'tpope/vim-surround' },
   { 'tpope/vim-sleuth' },
   { "tpope/vim-fugitive" },
@@ -29,5 +29,6 @@ return {
     config = function()
       vim.g.pasta_disabled_filetypes = { 'fugitive' }
     end
-  }
+  },
+  { 'sheerun/vim-polyglot' },
 }
